@@ -1,0 +1,75 @@
+.navbar {
+    position: relative;
+    display: flex;
+    margin-left:20vw;
+    margin-right:20vw;
+    width:60vw;
+    justify-content: space-between;
+    align-items: center;
+    font-style: italic;
+}
+/* .navbar a{
+    text-decoration: none;
+    color: black
+} */
+.leftPart p:hover, .rightPart p:hover{
+    color: orange;
+    cursor: pointer;
+}
+.leftPart .active, .rightPart .active {
+    color: orange;
+    cursor: pointer;
+}
+/* .navbar a.visited{
+    color: orange;
+} */
+.leftPart {
+    position:relative;
+    display:flex;
+    width:32%;
+    margin-left:3%;
+    justify-content:flex-start;
+    font-size: 1rem;
+}
+.leftPart p{
+    margin-left:8px;
+    margin-right: 8px;
+    position:relative;
+    display:flex;
+}
+
+.centerPart {
+    position:relative;
+    display:flex;
+    width:28%;
+    margin-left:1%;
+    justify-content: center;
+    margin-right:1%;
+}
+
+.centerPart h1{
+    font-size:1.5rem;
+}
+
+.rightPart {
+    position:relative;
+    display:flex;
+    width:32%;
+    margin-right:3%;
+    list-style-type: none;
+    justify-content: right;
+    font-size: 1rem;
+}
+.rightPart p{
+    position:relative;
+    display:flex;
+    margin-left:8px;
+    margin-right:8px;
+    
+}
+
+
+.rightPart i {
+    color:rgba(0, 0, 0, 0.277) ;
+    margin-right: 5px;
+}

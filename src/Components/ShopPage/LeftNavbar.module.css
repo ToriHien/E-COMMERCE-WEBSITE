@@ -1,0 +1,43 @@
+.leftNavbar {
+    position: relative;
+    display:flex;
+    width:30%;
+    /* background-color: aqua; */
+    font-style: italic;
+    flex-direction: column;
+}
+.leftNavbar ul{
+    padding-left: 0px;
+}
+.leftNavbar h1{
+    font-size: 1.5rem;
+}
+
+.leftNavbar li{
+    list-style-type: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    color:rgba(0, 0, 0, 0.266);
+    font-weight: 600;
+}
+
+.leftNavbar .products:hover{
+    color:orange;
+    cursor: pointer;
+}
+.leftNavbar .products:visited{
+    color: orange;
+}
+.leftNavbar .important {
+    color:white;
+    background-color: black;
+}
+
+.leftNavbar .title{
+    color: black;
+    background-color: rgb(239, 244, 239);
+}
+
+.leftNavbar .active {
+    color: orange;
+}

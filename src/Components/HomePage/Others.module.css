@@ -1,0 +1,60 @@
+.others, .row1, .row2, .other1, .other2, .other3 {
+    position: relative;
+    display: flex;
+}
+
+.others, .other1, .other2, .other3 {
+    flex-direction: column;
+}
+
+.row1{
+    margin-left: 20%;
+    margin-right:20%;
+    height:200px;
+    background-color: rgb(248,249,250);
+    justify-content: space-around;
+    align-items: center;
+    font-style: italic;
+}
+
+.row1 h2, .row2 h2{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+
+.row1 p, .row2 p{
+    font-size:0.9rem;
+    color: rgba(0, 0, 0, 0.242);
+    font-weight: 600;
+}
+.row2 {
+    height:150px;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-style: italic;
+    justify-content: space-between;
+    align-items: center;
+    width:60%;
+}
+
+.rightPart {
+    width: 50%;
+}
+.rightPart button {  
+    height:35%;
+    padding: 10px;
+    color:white;
+    background-color: rgb(56,56,56);
+    font-size: 1rem;
+    width:20%;
+}
+
+.rightPart input {
+    height:35%;
+    padding:10px 20px;
+    font-size: 1rem;
+    width:80%;
+}
+
+

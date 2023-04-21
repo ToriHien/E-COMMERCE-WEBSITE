@@ -1,0 +1,91 @@
+.collectionList {
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:50px;
+    height:650px;
+}
+.row1 {
+    position: inherit;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    font-style: italic;
+    margin-bottom: 0px;
+}
+
+.row1 p {
+    font-size:0.9rem;
+    color: rgba(0, 0, 0, 0.242);
+    font-weight: 700;
+    margin: 0px;
+}
+
+.row1 h2 {
+    font-size:1.3rem;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.row2{
+    position: inherit;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20%;
+}
+
+.row2 img {
+    width: 49%;
+    height: auto;
+    margin: 0px;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    display:flex;
+    left:0;
+    width:100%;
+    z-index: 10;
+    height:100%;
+    justify-content: space-between;
+}
+.overlay1, .overlay2 {
+    position: relative;
+    right:0;
+    width:49%;
+    z-index: 10;
+    background-color: none;
+    height:100%;
+    transition:0.3s;
+}
+
+
+.row3{
+    position:inherit;
+    display:flex;
+    justify-content: space-between;
+    margin: 20px 20%;
+}
+.row3 img {
+    width:32%;
+    height:auto;
+    margin: 0px;
+    transition:0.5s;
+}
+.overlay3, .overlay4, .overlay5{
+    position: relative;
+    right:0;
+    width:32%;
+    z-index: 10;
+    background-color: none;
+    height:100%;
+    transition:0.3s;
+}
+
+.overlay1:hover, .overlay2:hover, .overlay3:hover, .overlay4:hover, .overlay5:hover{
+    background-color: rgba(255, 255, 255, 0.307);
+}

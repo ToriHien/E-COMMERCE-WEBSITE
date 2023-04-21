@@ -1,0 +1,140 @@
+.productList{
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20%;
+    margin-right:20%;
+    width:60%;
+    margin-top:30px;
+}
+
+.category {
+    position:relative;
+    display:flex;
+    width:70%;
+    flex-direction: column;
+}
+
+.part1 {
+    position:relative;
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.search {
+    position:relative;
+    width:50%;
+    font-size:1.2rem;
+    padding-right:0px;
+}
+.bt {
+    position:relative;
+    width:fit-content  ;
+    height:30px;
+    font-size: 1rem;
+    background-color: white;  
+}
+
+.part2 {
+    position:relative;
+    display:flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    font-style: italic;
+}
+
+.product{
+    position:relative;
+    display:flex;
+    width:31%;
+    height: 250px;
+    margin: 10px 1%;
+    flex-direction: column;
+}  
+.imag {
+    position:relative;
+    animation: bigger 1s;
+    width: 100%;
+    height:200px;
+    margin: auto;
+}
+
+@keyframes bigger {
+    from{
+        width: 0%;
+        height:0px;  
+    
+    }
+    
+    to{
+        width: 100%;
+        height:200px;
+    
+    }
+}
+
+.product h1 {
+    position: relative;
+    font-size: 0.9rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.product p {
+    position:relative;
+    color: rgba(0, 0, 0, 0.414);
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+.overlay{
+    position: absolute;
+    right:0;
+    width:100%;
+    z-index: 10;
+    background-color: none;
+    height:200px;
+    animation: bigger 1s;
+    margin: 1%;
+}
+
+.overlay:hover{
+    background-color: rgba(255, 255, 255, 0.307);
+}
+
+.part3 {
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width:100%;
+    font-size: 1rem;
+    font-style: italic;
+}
+.pageNumber{
+    display:flex;
+    justify-content: flex-start;
+}
+.part3 .btBack, .part3 .btNext {
+    position:relative;
+    font-size: 0.6rem;
+    width:25px;
+    height:25px;
+    border:1px solid rgb(195, 193, 193);
+    background-color: white;
+    padding: 0px 6px;
+}
+.part3 span {
+    position:relative;
+    width:25px;
+    height:25px;
+    color:white;
+    text-align: center;
+    background-color: black;
+}
+
+.part3 p {
+    color: rgba(0, 0, 0, 0.414);
+}

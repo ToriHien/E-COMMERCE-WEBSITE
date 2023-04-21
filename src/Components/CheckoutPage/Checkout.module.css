@@ -1,0 +1,112 @@
+.checkout{
+    display: flex;
+    position: relative;
+    margin-top: 30px;
+    margin-left: 20vw;
+    margin-right:20vw;
+    width:60vw;
+    flex-direction: column;
+    font-style: italic;
+    
+}
+.checkout h1{
+    font-size: 1.3rem;
+}
+.formDetail{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top:10px;
+}
+.formDetail .formOrder{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:57%;
+}
+.formDetail.formOrder.ip{
+    display:flex;
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:100%;
+}
+.formOrder label{
+    position:relative;
+    display: block;
+    width:100%;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    margin-top:10px;
+    color:rgba(0, 0, 0, 0.745);
+}
+.formDetail input{
+    width:100%;
+    position:relative;
+    display: flex;
+    font-size: 1rem;
+    padding: 10px 0px 10px 10px;
+}
+
+.formDetail button{
+    margin-top: 20px;
+    width:30%;
+    background-color: rgb(56,56,56);
+    border: 1px solid rgb(56,56,56);
+    color:white;
+    margin-bottom: 20px;
+}
+
+.formDetail button:hover {
+    background-color: black;
+    border: 1px solid black;
+}
+
+.formDetail .rightPart {
+    width:38%;
+    background-color:rgb(248,249,250);
+    padding:30px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.formDetail .rightPart h2{
+    font-size: 1.2rem;   
+    margin-bottom: 20px; 
+}
+
+.formDetail .rightPart .midRow{
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.745);
+    margin-top: 10px;
+
+}
+.formDetail .rightPart .midRow h2{
+    font-size: 1vw;
+    width:50%;
+}
+
+.formDetail .rightPart .midRow p{
+    font-size: 0.9vw;
+}
+
+.formDetail .rightPart .endRow{
+    display:flex;
+    position:relative;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.formDetail .rightPart .endRow h2{
+    font-size: 1.2vw;
+}
+
+.formDetail .rightPart .endRow p{
+    font-size: 1.2vw;
+}

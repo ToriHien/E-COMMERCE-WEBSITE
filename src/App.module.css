@@ -1,0 +1,10 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  font-size: calc(10px + 2vmin);
+  position:relative;
+  width:100vw;
+  margin:0;
+  z-index: 1;
+}
+
