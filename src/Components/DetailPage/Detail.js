@@ -159,9 +159,7 @@ const Detail = (props) => {
     useEffect(() => addQuantity(),[isAddCart]);
     useEffect(() => {updateListCart();},[isAddQuantity]);
     useEffect(() => {updateLocalStorage();},[listCart]);
-    useEffect(() => {
-        window.scrollTo(0, 0);
-      }, []);
+    useEffect(() => {window.scrollTo(0, 0);}, []);
     return(
         <div className={classes.detail}>
             {showDetailProduct()}
