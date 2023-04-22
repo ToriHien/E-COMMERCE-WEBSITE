@@ -1,6 +1,6 @@
 import classes from './Detail.module.css'
 import { useSelector,useDispatch } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import { useParams} from 'react-router-dom';
 import { useState, useEffect, useRef} from 'react';
 import React from 'react';
 import { cartActions } from '../../store/cart';
@@ -154,11 +154,14 @@ const Detail = (props) => {
             return ''}
         else{localStorage.setItem('listCart',JSON.stringify(listCart));}
     }
-
+    
 
     useEffect(() => addQuantity(),[isAddCart]);
     useEffect(() => {updateListCart();},[isAddQuantity]);
     useEffect(() => {updateLocalStorage();},[listCart]);
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return(
         <div className={classes.detail}>
             {showDetailProduct()}

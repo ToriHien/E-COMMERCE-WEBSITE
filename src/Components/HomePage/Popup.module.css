@@ -21,6 +21,7 @@
     background-color: white;
     justify-content: space-between;
     font-style: italic;
+    overflow-y: scroll;
 }
 
 .imag {
