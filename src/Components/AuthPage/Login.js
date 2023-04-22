@@ -9,24 +9,30 @@ import React from 'react';
 const Login = (props) => {
     const navigate=useNavigate();
     const dispatch=useDispatch();
-    const inputEmailRef=useRef();
-    const inputPasswordRef=useRef();
+    const [enteredEmail,setEnteredEmail] = useState('')
+    const [enteredPassword, setEnteredPassword] = useState('')
     const userLogin = useSelector(state => state.user.userLogin);
     const isLogin = useSelector(state => state.auth.isAuthenticated);
     const userArr = useSelector(state => state.user.userArr);
+    const [isEmail, setIsEmail] = useState(true)
+    const [isPassword, setIsPassword] = useState(true)
 
     // Hàm chuyển qua register
     const toSignupHandler = (event) => {
         navigate('/register')
     }
     
+    const emailChangeHandler = (e) => setEnteredEmail(e.target.value)
+    const passwordChangeHandler = (e) => setEnteredPassword(e.target.value)
+
     //Kết quả xử lý sau khi login
     const submitHandler=(event) => {
         event.preventDefault();
-        const enteredEmail = inputEmailRef.current.value;
-        const enteredPassword = inputPasswordRef.current.value;
+
         const lookAccount = userArr.find(user => user.email === enteredEmail)
+        
         if(lookAccount !== undefined){
+            setIsEmail(true)
             if(lookAccount.password === enteredPassword){
                 dispatch(userActions.ON_LOGIN({
                     name:lookAccount.name,
@@ -34,6 +40,7 @@ const Login = (props) => {
                     password:lookAccount.password,
                     phone:lookAccount.phone,
                 }))
+                setIsPassword(true)
                 dispatch(authActions.login('true'))
                 localStorage.setItem('isLogin','true');
                 localStorage.setItem(
@@ -45,19 +52,15 @@ const Login = (props) => {
                         phone:lookAccount.phone,                       
                     })
                 );
-                // setIsValidated(true);
+
                 
             }
             else{ 
-                alert('Mật khẩu sai, vui lòng nhập lại');
-                // setIsValidated(false)
-                inputPasswordRef.current.value=''
+                setIsPassword(false)
             }
         }
         else{
-            alert('email chưa đăng ký, vui lòng đăng ký')
-            inputPasswordRef.current.value=''
-            // setIsValidated(false)
+            setIsEmail(false)
         }
     }
 
@@ -73,8 +76,8 @@ const Login = (props) => {
             <React.Fragment>
                 <h1>Sign In</h1>
                 <div className={classes.control}>
-                    <input type='email'placeholder='Email' form='form1'required ref={inputEmailRef}/>
-                    <input type='password'placeholder='Password' form='form1' required ref={inputPasswordRef}/>
+                    <input type='email'placeholder='Email' form='form1'required onChange={emailChangeHandler}/>
+                    <input type='password'placeholder='Password' form='form1' required onChange ={passwordChangeHandler}/>
                 </div>
                     <button className={classes.bt}>SIGN IN</button>
                 <div className={classes.last}>
@@ -88,8 +91,10 @@ const Login = (props) => {
                 <React.Fragment>
                     <h1>Sign In</h1>
                     <div className={classes.control}>
-                        <input type='email'placeholder='Email' form='form1'required ref={inputEmailRef}/>
-                        <input type='password'placeholder='Password' form='form1' required ref={inputPasswordRef}/>
+                        {isEmail ? <> </> : <div className={classes.invalidText}> Tên Email không tồn tại </div>}
+                        <input type='text'placeholder='Email' form='form1'required onChange={emailChangeHandler}/>
+                        {isPassword ? <> </> : <div className={classes.invalidText}> Mật khẩu sai, vui lòng nhập lại </div>}
+                        <input type='password'placeholder='Password' form='form1' required onChange ={passwordChangeHandler}/>
                     </div>
                         <button className={classes.bt}>SIGN IN</button>
                     <div className={classes.last}>
