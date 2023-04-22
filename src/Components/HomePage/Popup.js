@@ -18,6 +18,7 @@ const Popup = (props) => {
     //Sự kiện xem chi tiết sản phẩm
     const viewDetailClickHandler = () => {
         navigate(`/detail/${dataPopup.category}/${dataPopup._id.$oid}`) 
+        dispatch(popupActions.hidePopup());
     }
 
     return(
