@@ -9,6 +9,9 @@
 ## Overview
 - This project helps shoppers signup, login, store the number of products they want to buy, view their shopping cart, view detailed prices, view the total price, delete products from the cart, easily view the list of goods, and view the details of any product they desire.
 
+## Program Language 
+HTML, CSS, Javascript, JSX, ReactJS, Bootstrap, React-router, Redux Toolkit   
+
 ## Home Page
 - On the home page, you can view the navigation bar with four options: Home, Shop, Cart, and Login. In addition, you can also view important information on the banner, see the list of categories, and view the products that are top trending.
 ![view Image](./src/Resource/Readme_1.jpg)
