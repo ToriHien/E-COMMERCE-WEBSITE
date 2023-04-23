@@ -10,9 +10,4 @@
 - This project helps shoppers signup, login, store the number of products they want to buy, view their shopping cart, view detailed prices, view the total price, delete products from the cart, easily view the list of goods, and view the details of any product they desire
 
 ## Home Page
-![view Image](https://gitlab.com/torihien/e-commerce-website/-/blob/main/src/Resource/Readme%201.jpg)
-<img margin="50px"src="https://gitlab.com/torihien/e-commerce-website/-/blob/main/src/Resource/Readme%201.jpg">
-<img width="500px" height="1000px"src="https://gitlab.com/torihien/e-commerce-website/-/blob/main/src/Resource/Readme%201.jpg">
-
-```html
-<h1>hello </h1>
+![view Image](./src/Resource/Readme_1.jpg)
